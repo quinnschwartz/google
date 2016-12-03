@@ -9,6 +9,7 @@
   background-position: center center;
   display: block;
   overflow: hidden;
+  height: 100%;
 }
 
 .img3 {
@@ -20,6 +21,7 @@
   background-position: center center;
   display: block;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .img2 {
@@ -31,17 +33,24 @@
   background-position: center center;
   display: block;
   overflow: hidden;
+  /*object-fit: cover;*/
 }
 
 
 .box1 {
   color: white;
   background-color: #263238;
-  margin-top: 250px;
+  margin-top: 220px;
   margin-left: 15px;
   margin-right: 15px;
+  margin-bottom: 15px
+  padding: 5px
   /*position: relative;*/
   /*height: 100%;*/
+}
+
+box2 {
+  height: 100px;
 }
 
 h1 {
@@ -52,6 +61,16 @@ h1 {
 
 li a {
   color: white;
+  /*display: inline-block !important;*/
+}
+
+ul li {
+  display: inline-block;
+  padding-left: 15px;
+}
+
+ul li:hover {
+  text-decoration: underline;
 }
 
 .color1 {
@@ -63,6 +82,10 @@ li a {
   background-color: #009688;
   color: white;
 }
+
+/*ul.browser-default li {
+  list-style-type: inherit;
+}*/
 
 
 @media (min-width: 601px) {
@@ -86,10 +109,22 @@ li a {
   }
 }
 
-/*@media (min-width: 993px) {
-  .yo {
-    max-height: 100%;
-    max-width: 100%;
+@media (min-width: 993px) {
+  .wrapper {
+    height: 100%;
+    box-sizing: inherit;
   }
 
-}*/
+  .img1:hover {
+   transform: scale(1.05);
+  }
+
+  .img2:hover {
+   transform: scale(1.05);
+  }
+
+  .img3:hover {
+   transform: scale(1.05);
+  }
+
+}
