@@ -1,39 +1,38 @@
-
+* {
+  box-sizing: border-box;
+}
 
 .img1 {
   background-image: url(../img/img1.jpg);
-  /*height: 100%;
-  width: 100%;*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   display: block;
   overflow: hidden;
-  height: 100%;
-}
-
-.img3 {
-  background-image: url(../img/img3.jpg);
-  height: 153px;
-  width: 100px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  display: block;
-  overflow: hidden;
-  object-fit: cover;
 }
 
 .img2 {
   background-image: url(../img/img2.jpg);
-  height: 153px;
+  height: 130px;
   width: 100px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  display: block;
-  overflow: hidden;
+  /*display: block;
+  overflow: hidden;*/
   /*object-fit: cover;*/
+}
+
+.img3 {
+  background-image: url(../img/img3.jpg);
+  height: 130px;
+  width: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*display: block;
+  overflow: hidden;
+  object-fit: cover;*/
 }
 
 
@@ -47,8 +46,15 @@
   padding: 1px;
 }
 
-box2 {
-  height: 100px;
+.box2 {
+  background-color: #0d47a1;
+  color: white;
+  height: 100%;
+}
+
+.box3{
+  background-color: #009688;
+  color: white;
 }
 
 h1 {
@@ -71,7 +77,7 @@ ul li:hover {
   text-decoration: underline;
 }
 
-.color1 {
+/*.color1 {
   background-color: #0d47a1;
   color: white;
 }
@@ -79,7 +85,7 @@ ul li:hover {
 .color2 {
   background-color: #009688;
   color: white;
-}
+}*/
 
 /*ul.browser-default li {
   list-style-type: inherit;
